@@ -1,0 +1,29 @@
+{
+  "name": "node-gbk",
+  "version": "1.0.0",
+  "description": "Some GBK encoding utilities for node, for example, gbkEncodeURIComponent",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amghost/node-gbk.git"
+  },
+  "keywords": [
+    "node",
+    "gbk"
+  ],
+  "author": "amghost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amghost/node-gbk/issues"
+  },
+  "homepage": "https://github.com/amghost/node-gbk#readme",
+  "dependencies": {
+    "iconv-lite": "^0.4.13"
+  }
+}
