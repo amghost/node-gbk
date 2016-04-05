@@ -28,4 +28,23 @@ describe('gbk', function () {
             querystring.stringify({name:'我'}, null, null, {encodeURIComponent: gbk.encodeURIComponent}).should.equal('name=%CE%D2');
         })
     })
+    
+    describe('decodeURIComponent', function() {
+        it('gbk.decodeURIComponent should be a Function', function(){
+            gbk.decodeURIComponent.should.be.a.Function();
+        });
+        
+        it('when pass unvalid value should return ""', function(){
+            gbk.decodeURIComponent(null).should.equal('');
+            gbk.decodeURIComponent(undefined).should.equal('');
+            gbk.decodeURIComponent(0).should.equal('');
+            gbk.decodeURIComponent(-1).should.equal('');
+            gbk.decodeURIComponent(1).should.equal('');
+        });
+        
+        it('%6E%61%6D%65 should be "name"', function(){
+            gbk.decodeURIComponent('%6E%61%6D%65').should.equal('name');
+        });
+    })
+    
 });

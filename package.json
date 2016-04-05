@@ -4,10 +4,10 @@
   "description": "Some GBK encoding utilities for node, for example, gbkEncodeURIComponent",
   "main": "index.js",
   "directories": {
-    "test": "./node_modules/.bin/mocha test/*.js"
+    "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha test/*.js"
   },
   "repository": {
     "type": "git",
