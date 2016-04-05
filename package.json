@@ -4,7 +4,7 @@
   "description": "Some GBK encoding utilities for node, for example, gbkEncodeURIComponent",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "./node_modules/.bin/mocha test/*.js"
   },
   "scripts": {
     "test": "mocha"
@@ -25,5 +25,9 @@
   "homepage": "https://github.com/amghost/node-gbk#readme",
   "dependencies": {
     "iconv-lite": "^0.4.13"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
   }
 }
