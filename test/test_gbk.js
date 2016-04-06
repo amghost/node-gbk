@@ -54,7 +54,7 @@ describe('gbk', function () {
             gbk.decodeURIComponent.should.be.a.Function();
         });
         
-        it.only('when pass unvalid value should return ""', function(){
+        it('when pass unvalid value should return ""', function(){
             gbk.decodeURIComponent(null).should.equal('');
             gbk.decodeURIComponent(undefined).should.equal('');
         });
